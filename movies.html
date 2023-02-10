@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="./app.js" defer></script>
+    <title>MoviesPage Reel Play</title>
+</head>
+<body>
+    <section class="hero browse__hero">
+
+        <video autoplay loop muted plays-inline class="back__video">
+            <source src="./assets/production ID_5157560.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <img src="./assets/logo.png" class="logo" alt="">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FIND YOUR MOVIE</a></li>
+            </ul>
+        </nav>
+
+        
+    </section>
+
+    <section class="movie__page" id="movie__page">
+
+        <div class="row">
+            <div class="search__wrapper">
+                <div class="search__box">
+                    <input type="search" class="search" placeholder="Search Movies..." id="search__input">
+                    <button class="search__btn" id="search__btn">
+                    <a href="#">   <i class="fas fa-search"></i></a> 
+                    </button>
+                </div>
+            </div>
+            <h2 class="section__title">
+                <span class="color">Search Results:</span>
+            </h2>
+            <div class="movies" id="movies">
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

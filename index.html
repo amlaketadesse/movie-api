@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+    <title>Reel Play</title>
+</head>
+<body>
+    <section class="hero">
+
+        <video autoplay loop muted plays-inline class="back__video">
+            <source src="./assets/production ID_5157560.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+          <a href="#"><img src="./assets/logo.png" class="logo" alt=""></a>  
+            <ul class="nav__links">
+                <li><a class="nav__link" href="#">HOME</a></li>
+                <li><a class="nav__link explore" href="#movie__page">EXPLORE</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1 class="content__header">World's Best Movie Search App Ever Created.</h1>
+            <a href="#movie__page">Find Your Movie</a>
+        </div>
+    </section>
+
+    <section class="movie__page" id="movie__page">
+-
+        <div class="row">
+            <h2 class="section__title">Browse Movies</h2>
+            <div class="search__wrapper">
+                <div class="search__box">
+                    <input type="search" class="search" placeholder="Search Movies..." id="search__input">
+                    <button class="search__btn" id="search__btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+                <div class="search__results">
+                    <span class="color results__text">Search Results:</span>
+                </div>
+            </h2>
+
+                <div class="movies" id="movies">
+                    
+                </div>
+            </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+                <div class="row row__column">
+                    <a href="#">
+                        <figure class="footer__logo">
+                            <img src="./assets/logo.png" class="footer__logo--img" alt="">
+                        </figure>
+                    </a>
+                    <div class="footer__list">
+                        <a href="" class="footer__link">Home</a>
+                        <a href="" class="footer__link">About</a>
+                        <a href="" class="footer__link">Movies</a>
+                        <a href="" class="footer__link">Contact</a>
+                    </div>
+                    <div class="footer__copyright">
+                        Copyright &copy; 2023 ReelPlay
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
