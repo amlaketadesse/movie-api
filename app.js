@@ -30,8 +30,3 @@ async function getMovieList(){
 }
 
 getMovieList();
-
-// Today:
-// - FOOTER
-// - RESPOSIVE
-// - PUBLISH
