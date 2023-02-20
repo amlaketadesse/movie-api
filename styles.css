@@ -11,8 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    scroll-behavior: smooth;
+}
+
 .row {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
@@ -47,14 +51,14 @@ i {
 }
 
 nav {
-    max-width: 2000px;
+    max-width: 2200px;
     width: 100%;
     margin: 0 auto;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 20px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,8 +66,12 @@ nav {
 
 nav .logo {
     width: 250px;
+    margin-top: 12px;
 }
 
+input::-webkit-search-cancel-button{
+    display: none;  
+}
 
 nav ul li {
     list-style: none;
@@ -150,9 +158,8 @@ color: white;
 }
 
 .movie__page {
-    width: 100%;
     height: auto;
-    /* background-color: #040c18; */
+    background-color: #040c18;
     background-image: linear-gradient(to top, lightblue, #1a3e6c, rgb(0, 6, 24));
     padding: 0 5%;
     display: flex;
@@ -196,9 +203,12 @@ color: white;
 }
 
 .movie__img--wrapper {
+    display: flex;
+    align-items: center;
     margin-bottom: 8px;
     overflow: hidden;
-    display: flex;
+    max-height: 450px;
+    height: 100%;
 }
 
 .movie:hover .movie__img {

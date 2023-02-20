@@ -8,9 +8,7 @@ async function getMovieList(){
     let searchInputTxt = document.getElementById ('search__input').value.trim();
     const movies = await fetch(`https://www.omdbapi.com/?apikey=4d79dfe6&s=${searchInputTxt || undefined}`);
     const moviesData = await movies.json();
-    console.log(moviesData)
-    movieList.innerHTML = moviesData.Search?.map(movie => MovieList(movie)).join('')
-
+    movieList.innerHTML = moviesData.Search?.slice(0, 8).map(movie => MovieList(movie)).join('');
 
         function MovieList(movie) {
                    return `<div class="movie" id="movies" data-id = ${movie.imdbID}>
@@ -29,9 +27,5 @@ async function getMovieList(){
 
 }
 
-getMovieList();
 
-// Today:
-// - FOOTER
-// - RESPOSIVE
-// - PUBLISH
+getMovieList();
